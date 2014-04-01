@@ -1,0 +1,35 @@
+{
+  "name": "density-clustering",
+  "version": "1.0.0",
+  "description": "Density Based Clustering in JavaScript",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LukaszKrawczyk/clustering.git"
+  },
+  "keywords": [
+    "DBSCAN",
+    "OPTICS",
+    "clustering",
+    "cluster",
+    "analysis",
+    "machine",
+    "learning",
+    "statistics"
+  ],
+  "author": "Lukasz Krawczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LukaszKrawczyk/clustering/issues"
+  },
+  "homepage": "https://github.com/LukaszKrawczyk/clustering"
+}
