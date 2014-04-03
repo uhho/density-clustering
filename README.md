@@ -66,8 +66,8 @@ var dataset = [
     [100,100]
 ];
 
-var dbscan = new DBSCAN();
-var clusters = dbscan.run(dataset, 2, 2);
+var optics = new OPTICS();
+var clusters = optics.run(dataset, 2, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
 
@@ -90,8 +90,8 @@ var dataset = [
     [50,50],[56,50],[50,52],[50,55],[50,51]
 ];
 
-var dbscan = new DBSCAN();
-var clusters = dbscan.run(dataset, 6, 2);
+var optics = new OPTICS();
+var clusters = optics.run(dataset, 6, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
 
