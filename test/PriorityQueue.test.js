@@ -1,5 +1,5 @@
 require("should");
-require('../lib/index.js');
+var PriorityQueue = require('../lib/index.js').PriorityQueue;
 
 describe('PriorityQueue', function() {
 
@@ -18,8 +18,7 @@ describe('PriorityQueue', function() {
     
     describe('#init()', function() {
         it('should initialize queue correctly', function() {
-            var p = new PriorityQueue();
-            p.init([1,2,3,4], [4,1,2,3]);
+            var p = new PriorityQueue([1,2,3,4], [4,1,2,3]);
 
             p.getElements().should.eql([1,4,3,2]);
             p.getPriorities().should.eql([4,3,2,1]);

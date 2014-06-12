@@ -1,4 +1,4 @@
-var DBSCAN = require('../lib/DBSCAN.js');
+var DBSCAN = require('../lib/index.js').DBSCAN;
 
 var dataset = [
     [1,1],[0,1],[1,0],

@@ -1,4 +1,4 @@
-require('../lib/index.js');
+var OPTICS = require('../lib/index.js').OPTICS;
 
 var dataset = [
     [1,1],[0,1],[1,0],

@@ -38,7 +38,8 @@ var dataset = [
     [54,54],[55,55],[89,89],[57,55]
 ];
 
-var dbscan = new DBSCAN();
+var clustering = require('density-clustering');
+var dbscan = new clustering.DBSCAN();
 var clusters = dbscan.run(dataset, 5, 2);
 console.log(clusters, dbscan.noise);
 
@@ -66,7 +67,8 @@ var dataset = [
     [100,100]
 ];
 
-var optics = new OPTICS();
+var clustering = require('density-clustering');
+var optics = new clustering.OPTICS();
 var clusters = optics.run(dataset, 2, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
@@ -90,7 +92,8 @@ var dataset = [
     [50,50],[56,50],[50,52],[50,55],[50,51]
 ];
 
-var optics = new OPTICS();
+var clustering = require('density-clustering');
+var optics = new clustering.OPTICS();
 var clusters = optics.run(dataset, 6, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
