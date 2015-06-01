@@ -1,6 +1,6 @@
 {
   "name": "density-clustering",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Density Based Clustering in JavaScript",
   "main": "./lib/index.js",
   "directories": {

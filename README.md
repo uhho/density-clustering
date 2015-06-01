@@ -30,9 +30,9 @@ For more information visit http://en.wikipedia.org/wiki/OPTICS_algorithm#Extract
 ### K-MEANS
 
 K-means clustering is one of the most popular method of vector quantization, originally from signal processing.
-Although this method is not density-based, it's included in the library for completeness.
+Although this method is **not density-based**, it's included in the library for completeness.
 
-http://en.wikipedia.org/wiki/OPTICS_algorithm
+http://en.wikipedia.org/wiki/K-means_clustering
 
 ## Installation
 
@@ -52,6 +52,7 @@ var dataset = [
 
 var clustering = require('density-clustering');
 var dbscan = new clustering.DBSCAN();
+// parameters: 5 - neighborhood radius, 2 - number of points in neighborhood to form a cluster
 var clusters = dbscan.run(dataset, 5, 2);
 console.log(clusters, dbscan.noise);
 
@@ -81,6 +82,7 @@ var dataset = [
 
 var clustering = require('density-clustering');
 var optics = new clustering.OPTICS();
+// parameters: 2 - neighborhood radius, 2 - number of points in neighborhood to form a cluster
 var clusters = optics.run(dataset, 2, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
@@ -106,6 +108,7 @@ var dataset = [
 
 var clustering = require('density-clustering');
 var optics = new clustering.OPTICS();
+// parameters: 6 - neighborhood radius, 2 - number of points in neighborhood to form a cluster
 var clusters = optics.run(dataset, 6, 2);
 var plot = optics.getReachabilityPlot();
 console.log(clusters, plot);
@@ -132,6 +135,7 @@ var dataset = [
 
 var clustering = require('density-clustering');
 var kmeans = new clustering.KMEANS();
+// parameters: 3 - number of clusters
 var clusters = kmeans.run(dataset, 3);
 console.log(clusters);
 
