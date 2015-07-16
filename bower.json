@@ -2,24 +2,13 @@
   "name": "density-clustering",
   "version": "1.2.0",
   "description": "Density Based Clustering in JavaScript",
-  "main": "./lib/index.js",
+  "main": "./dist/clustering.min.js",
   "directories": {
     "example": "example",
     "test": "test"
   },
   "dependencies": {},
-  "devDependencies": {
-    "mocha": "^2.2.4",
-    "should": "^5.2.0",
-
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.5.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-resolve-dependencies": "^2.1.0"
-  },
-  "scripts": {
-    "test": "mocha -R spec"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/LukaszKrawczyk/clustering.git"
@@ -35,7 +24,7 @@
     "learning",
     "statistics"
   ],
-  "author": {
+  "authors": {
     "name": "Lukasz Krawczyk"
   },
   "license": "MIT",
