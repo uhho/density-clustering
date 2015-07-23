@@ -40,14 +40,14 @@ describe('DBSCAN', function() {
       var dbscan = new DBSCAN(dataset);
 
       dbscan.epsilon = 1;
-      dbscan._regionQuery(1).should.eql([]);
+      dbscan._regionQuery(1).should.eql([1]);
 
       dbscan.epsilon = 2;
-      dbscan._regionQuery(1).should.eql([0, 2]);
-      dbscan._regionQuery(4).should.eql([3]);
+      dbscan._regionQuery(1).should.eql([0, 1, 2]);
+      dbscan._regionQuery(4).should.eql([3, 4]);
 
       dbscan.epsilon = 100;
-      dbscan._regionQuery(1).should.eql([0, 2, 3, 4]);
+      dbscan._regionQuery(1).should.eql([0, 1, 2, 3, 4]);
     });
   });
 

@@ -52,11 +52,11 @@ describe('OPTICS', function() {
         [50, 50], [51, 51]
       ];
       optics.epsilon = 2;
-      optics._regionQuery(1).should.eql([0, 2]);
-      optics._regionQuery(4).should.eql([3]);
+      optics._regionQuery(1).should.eql([0, 1, 2]);
+      optics._regionQuery(4).should.eql([3, 4]);
 
       optics.epsilon = 100;
-      optics._regionQuery(1).should.eql([0, 2, 3, 4]);
+      optics._regionQuery(1).should.eql([0, 1, 2, 3, 4]);
     });
   });
 
