@@ -1,3 +1,6 @@
+v.1.3.0
+- bower compatibility (huge thanks to ([@tim42](https://github.com/tim42)))
+
 v.1.2.1
 - unit test fix
 
