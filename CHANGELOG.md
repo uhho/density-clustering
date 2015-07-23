@@ -1,3 +1,6 @@
+v.1.2.1
+- unit test fix
+
 v.1.2.0
 - DBSCAN, OPTICS - include core point in region query
 
