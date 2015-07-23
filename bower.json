@@ -31,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/LukaszKrawczyk/density-clustering/issues"
   },
-  "homepage": "https://github.com/LukaszKrawczyk/density-clustering"
+  "homepage": "https://github.com/LukaszKrawczyk/density-clustering",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
 }
