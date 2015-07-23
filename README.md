@@ -36,14 +36,23 @@ http://en.wikipedia.org/wiki/K-means_clustering
 
 ## Installation
 
-```
+Node:
+```bash
 npm install density-clustering
+```
+
+Browser:
+```bash
+bower install density-clustering
+# build
+npm install
+gulp
 ```
 
 ## Examples
 
 ### DBSCAN
-```
+```js
 var dataset = [
     [1,1],[0,1],[1,0],
     [10,10],[10,13],[13,13],
@@ -71,7 +80,7 @@ NOISE: [ 8 ]
 
 ### OPTICS
 
-```
+```js
 // REGULAR DENSITY
 var dataset = [
   [1,1],[0,1],[1,0],
@@ -98,7 +107,7 @@ RESULT:
 */
 ```
 
-```
+```js
 // VARYING DENSITY
 var dataset = [
   [0,0],[6,0],[-1,0],[0,1],[0,-1],
@@ -126,7 +135,7 @@ RESULT:
 ```
 
 ### K-MEANS
-```
+```js
 var dataset = [
   [1,1],[0,1],[1,0],
   [10,10],[10,13],[13,13],
@@ -152,7 +161,7 @@ RESULT:
 ## Testing
 
 Open folder and run:
-```
+```bash
 mocha -R spec
 ```
 
